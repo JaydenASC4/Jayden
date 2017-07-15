@@ -1,10 +1,10 @@
 
-var prompt = require('prompt-sync');
+var prompt = require('prompt-sync')();
 var money = 1000;
 var items = [];
 
 while(money > 99){
-console.log("Console computers are worth 500 shirts are worth 100")  
+console.log("You have $ " + money + " Shirts = 100 Computers = 400")  
 var answer = prompt('What do you wish to buy')  
 }
     
