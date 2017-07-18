@@ -23,15 +23,15 @@ if(gender == "Female"){
     console.log(fName);
     
 }
-else if(gender == "Male"){
+else if (gender == "Male"){
     mName = mName[rand(2)];
     console.log(mName);
     
 }
 }
+var genderChosen = genderBender(gender,fName,mName);
 
-console.log("You are a " + age + " year old " + gender + " named " + genderBender(fName,gender,mName) + " ." );
-
+console.log("You are a " + age + " year old " + gender + " named " + genderChosen + " ." );
 
 
 
