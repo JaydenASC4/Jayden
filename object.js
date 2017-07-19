@@ -12,6 +12,6 @@ function Superhero(){
     this.realName = realName;
 }
 
-var batman = new Superhero("Bruce Wayne", "STUPID BANDS")
-var superman = new Superhero("Kal-El", "Deadassmadop");
-var blackPanther = new Superhero("T'Challa","vibranium")
+var batman = new Superhero("Bruce Wayne", "STUPID BANDS",2)
+var superman = new Superhero("Kal-El", "Deadassmadop",2);
+var blackPanther = new Superhero("T'Challa","vibranium",1)

@@ -21,4 +21,9 @@ for (var i=0; i<roster.length; i++)
 console.log(roster[i])
 }
 
+function pokeAttack(pokes){
+    for (var i=0 )
+}
+
+
  
