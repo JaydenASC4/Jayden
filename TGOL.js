@@ -16,22 +16,52 @@ function rand(upperbd){
 
 
 gender = gender[rand(2)];
-
+//genderbender picks the gender of character whilst giving him/her a name based on gender
 function genderBender(gender,fName,mName){
 if(gender == "Female"){
     fName = fName[rand(2)];
     console.log(fName);
-    
+    return fName
 }
-else if (gender == "Male"){
+else if(gender == "Male"){
     mName = mName[rand(2)];
     console.log(mName);
-    
+    return mName
 }
 }
-var genderChosen = genderBender(gender,fName,mName);
 
-console.log("You are a " + age + " year old " + gender + " named " + genderChosen + " ." );
+
+console.log("You are a " + age + " year old " + gender + " named " + genderBender(gender,fName,mName) + ".");
+
+
+function tgol(event){
+event = event[rand(3)];
+while(event != death || sOI){
+if(event == death){
+    console.log(death)
+}
+
+else if(event == job){
+console.log(job);
+
+}
+else if(event == sOI){
+console.log(sOI);
+}
+
+else if (event == kids){
+    console.log(kids);
+}
+}
+return
+}
+
+tgol(event)
+
+
+
+
+
 
 
 

@@ -1,0 +1,19 @@
+Its The Boon{
+width: 50%
+}
+
+body{
+    background-image:url("./MORTALkombat.jpg");
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.InfoMore{
+    background-color: black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px red;
+}
