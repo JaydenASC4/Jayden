@@ -3,12 +3,23 @@ function setup(){
     background(200);
 }
 
-var row1 = ["nu","nu","nu","nu"];
-var row2 = ["nu","nu","nu","nu"];
-var row3 = ["nu","nu","nu","nu"];
-var row4 = ["nu","nu","nu","nu"];
+var randomizer = ["nu","su"]
+
+
+
+
+
+
+
+
+var row1 = [randomizer[random(1)],randomizer[random(1)],randomizer[random(1)],randomizer[random(1)]];
+var row2 = [randomizer[random(1)],randomizer[random(1)],randomizer[random(1)],randomizer[random(1)]];
+var row3 = [randomizer[random(1)],randomizer[random(1)],randomizer[random(1)],randomizer[random(1)]];
+var row4 = [randomizer[random(1)],randomizer[random(1)],randomizer[random(1)],randomizer[random(1)]];
 var board = [row1,row2,row3,row4]
-random(board[random(0, 3)]) = "su";
+
+
+
 function draw(row1,row2,row3,row4){
 stroke(0);
 for(var i=0 ; i<board.length ; i++){
@@ -41,7 +52,10 @@ else if  (board[floor(mouseY/100)][floor(mouseX/100)]=="su"){
 }
 
 
-
+/*var row1 = ["nu","nu","nu","nu"];
+var row2 = ["nu","nu","nu","nu"];
+var row3 = ["nu","nu","nu","nu"];
+var row4 = ["nu","nu","nu","nu"];
 
 
 
