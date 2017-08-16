@@ -15,7 +15,7 @@ var ySpeed;
 function draw(){
 background(200);
 fill(random(255),random(255),random(255))
-ellipse(x,y,30,30);
+ellipse(x,y,random(50),random(50));
 if(x>=500){
     xSpeed = -1;
     

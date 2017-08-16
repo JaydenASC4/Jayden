@@ -1,0 +1,44 @@
+<HTMl>
+<HEAD>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDISOJtXGzGYWgc_gfmefdCJlngLPe3SBo",
+    authDomain: "rocko-popo-socko.firebaseapp.com",
+    databaseURL: "https://rocko-popo-socko.firebaseio.com",
+    projectId: "rocko-popo-socko",
+    storageBucket: "rocko-popo-socko.appspot.com",
+    messagingSenderId: "51227515837"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="RPS.js"></script>
+    <link rel="stylesheet" href="RPS.css">
+</HEAD>
+<BODY>
+<div class = "noSauce">
+
+</div>
+
+<div class="inputs">
+    <p>Your name:</p><input id="name" type="text"></input>
+    </div>
+
+<div class="buttons">
+<button id="Rock" type="submit" onclick="rock();">Rock</button>
+<button id="Paper" type="submit" onclick="paper();" value="submit/update">Paper</button>
+<button id="Scissors" type="submit" onclick="scissors();" value="submit/update">Scissors</button>
+</div>
+<div class ="utilButtons">
+<button id="SaveScore" type="submit" onclick="logScore();">SaveScore</button>
+<button id="Reset" type="submit" onclick="reSet">Reset</button>
+    </div>
+</BODY>
+
+
+</HTMl>

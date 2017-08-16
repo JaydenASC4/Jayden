@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBdCyf2vkWAj6IJte9kIJAeDMfRfkQy2SU",
+    authDomain: "email-logging-68cbd.firebaseapp.com",
+    databaseURL: "https://email-logging-68cbd.firebaseio.com",
+    projectId: "email-logging-68cbd",
+    storageBucket: "email-logging-68cbd.appspot.com",
+    messagingSenderId: "568283946885"
+  };
+  firebase.initializeApp(config);
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="./DoomsDay.Js"></script>
+<link rel="stylesheet" href="eduStyle.css">
+
+</HEAD>
+
+
+<BODY>
+
+<h2>In this section we provide help to all the students in need of help with homework, studying for test or even full tutorships some of our services are provided below</h2>
+
+<h3>This section you can ask us and many of our trusted and registered tutors question about certain tasks and subjects, or even if you need help with homework or tests this is the place to ask.</h3> 
+    <h1>The All Star Help Edu Chat Room</h1>
+
+    <!--Will be populated with messages-->
+    <div class="allMessages">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="textContainer">
+                <div>
+                    <p>Your name:</p><input id="name" type="text">
+                </div>
+                <div>
+                    <p>Message:</p><input id="message" type="text">
+                </div>
+            </div>
+            <div class="GObutton">
+                <input type="reset" onclick="updateDB();" value="Submit/Update">
+            </div>
+        </form>
+    </div>
+
+<CENTER>
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="self.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Cyril Kuhns</h2>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button class="btn btn-primary"><a href="http://cxkuhns.biz/">Go somewhere</a></button>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="Thomas_The_Tank_Engine.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Thomas Krill</h2>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button  class="btn btn-primary"><a href="">Thomas's Website</a></button>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="izi_360.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Izi Sobek</h2>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button class="btn btn-primary" type="submit" href="http://cxkuhns.biz/">Izi's Website</button>
+  </div>
+</div>
+</CENTER>
+
+
+</BODY>
+
+</HTML>

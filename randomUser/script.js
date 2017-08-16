@@ -1,5 +1,22 @@
 var apiURL = "https://randomuser.me/api";
 
+var book1 =  ;
+var book2 =  ;
+var book3 =  ;
+var book4 =  ;
+var book5 =  ;
+var book6 =  ;
+var book7 =  ;
+var book8 =  ; 
+var book9 =  ; 
+var book10 =  ;
+
+
+
+
+
+
+
 $.ajax({
     url:apiURL,
     success:function(data){

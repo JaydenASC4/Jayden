@@ -1,0 +1,81 @@
+<html>
+<head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+</style>
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="226458053219-5p2fedf4juvabp2br7129ue2cc0q8817.apps.googleusercontent.com">
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src="DoomsDay.Js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBdCyf2vkWAj6IJte9kIJAeDMfRfkQy2SU",
+    authDomain: "email-logging-68cbd.firebaseapp.com",
+    databaseURL: "https://email-logging-68cbd.firebaseio.com",
+    projectId: "email-logging-68cbd",
+    storageBucket: "",
+    messagingSenderId: "568283946885"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+    <link rel="stylesheet" href="./DoomsDay.css">
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="financeCata.HTML">Financial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="educationCata.HTML">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resourceCata.HTML">Resources</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  
+
+    
+    
+<div class="main">
+   <img class="filler1" src="http://blog.cengagebrain.com/blog/wp-content/uploads/2013/01/tutoring.jpg">
+   <h1>Education</h1>
+   <p>In this segment we offer help to our clients by providing you with our tutoring program. We link you to one of our great and trusted tutors that can help you with anything such as computer science, History, Math , etc. We can also link you to one of our financial aid projects to help pay for your school tuitions.</p>
+
+
+
+<img class="filler2" src="https://www.geteducated.com/images/articles/onlinestudentsummercourse.jpg">
+<h1>Financial</h1>
+<P>In the financial section we offer our sources of finanial aid such as food stamps or for students FAFASA, we also have sources to websites that are more accessible to the less fortunate demographic</P>
+
+
+
+<img class="filler3" src="http://www.livemint.com/rf/Image-330x220/LiveMint/Period2/2017/08/01/Photos/Processed/mobile-kLfE--621x414@LiveMint-kcG--621x414@LiveMint.jpg">
+<h1>Resources</h1>
+<P>In our resources sections we help those in need and try to fight poverty one website at a time</P>
+</div>
+<h1>For user convience sign in using google here</h1>
+<div class="g-signin2" data-onsuccess="onSignIn" onclick="sendToFirebase"></div>
+
+</body>
+</html>

@@ -1,21 +1,86 @@
-var userchoice = "r";
+var myChoice = 0;
 
-var choices = ["r", "p","s"];
-var compchoice = Choices[Math.floor(Math.random()*3)];
+var database = firebase.database().ref();
 
-console.log("User Choice: "+userchoice);
-console.log("Computer choice : "+compchoice);
+var choices = [0,1,2];
 
-if (userchoice == compchoice){
-    console.log("draw game");
+var otherChoice = choices[Math.floor(Math.random()*3)];
+
+var score = 0;
+
+var tie = "It's a tie";
+var loss = "You lose";
+var win = "You win";
+var winTimes = 0;
+
+console.log("user choice: "+myChoice);
+console.log("computer choice "+otherChoice);
+
+function reset(){
+    otherChoice = choices[Math.floor(Math.random()*3)];
+
 }
-else if (userchoice=="r");{
-    if (compchoice == "p"){
-    console.log("Computer wins");
-}
-else if (compchoice == "s")
-    console.log("Human Wins");
 
-else{
-    console.log("error! computer chose: " + compchoice)
-}}
+
+function rock(){
+    myChoice =0;
+    if(otherChoice == 0){
+        console.log(tie);
+        $(".noSauce").append("<p>" + tie + "</p>");
+        $(".noSauce").append("<p> Your score is " + score + "</p>");
+    }else if(otherChoice == 1){
+        console.log(loss);
+        $(".noSauce").append("<p>" + loss + "</p>");
+        $(".noSauce").append("<p> Your score is " + score + "</p>");
+    }else if(otherChoice == 2){
+        console.log("You win");
+        $(".noSauce").append("<p>" + win) + "</p>";
+        $(".noSauce").append(score+=10);
+    }
+    reset();
+} 
+function paper(){
+    myChoice = 1;
+    if(otherChoice == 0){
+        console.log("You win");
+        $(".noSauce").append("<p>" + win + "</p>");
+        $(".noSauce").append(score+=10);
+    }else if(otherChoice == 1){
+        console.log("It's a tie");
+        $(".noSauce").append("<p>" + tie + "</p>");
+        $(".noSauce").append("<p> Your score is " + score + "</p>");
+    }else if(otherChoice == 2){
+        console.log("You lose");
+        $(".noSauce").append("<p>" + loss + "</p>");
+        $(".noSauce").append("<p>" + score + "</p>");
+    }
+    reset();
+} 
+function scissors(){
+    myChoice = 2;
+    if(otherChoice == 0){
+        console.log("You lose");
+        $(".noSauce").append("<p>" + loss + "</p>");
+        $(".noSauce").append("<p> Your score is " + score +  "</p>");
+    }else if(otherChoice == 1){
+        console.log("You win");
+        $(".noSauce").append("<p>" + win + "</p>");
+        $(".noSauce").append(score+=10);
+    }else if(otherChoice == 2){
+        console.log("It's a tie");
+        $(".noSauce").append("<p>" + tie + "</p>");
+        $(".noSauce").append("<p> Your score is " + score + "</p>");
+    }
+    reset();
+}
+
+var name = $("#name").val();
+
+function logScore(){
+    database.push(name + " : " + score)
+    console.log(name + score)
+}
+
+function reSet(){
+    $(".noSauce").empty();
+}
